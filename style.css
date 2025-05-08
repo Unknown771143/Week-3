@@ -7,7 +7,9 @@ body {
   font-family: 'Saans', sans-serif;
 }
 
-h1, h2, pre {
+h1,
+h2,
+pre {
   font-family: 'Saans Mono', monospace;
 }
 
@@ -36,7 +38,7 @@ h1, h2, pre {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: black; 
+  background-color: black;
   padding: 0px;
   color: #ef8d68;
 }
@@ -69,17 +71,17 @@ h1, h2, pre {
   background-position: center;
   background-attachment: scroll;
   color: #ef8d68;
-  padding-bottom: -300px;
   padding: 20px;
-  height: 1000px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-size: 25px;
+  font-size: clamp(18px, 4vw, 25px);
   text-align: right;
-  padding-top: 30px;
-  padding-right: 50px;
+  padding-top: clamp(20px, 4vh, 30px);
+  padding-right: clamp(20px, 5vw, 50px);
 
-  p, h1 {
+  p,
+  h1 {
     background-color: transparent;
   }
 }
