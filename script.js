@@ -85,7 +85,7 @@ function startTimer(timerDisplay) {
             clearInterval(myInterval)
             timerDisplay.querySelector('.time').textContent = "00:00"
 
-            const alarm = new Audio('digital-alarm-2-151919.mp3')
+            const alarm = new Audio('digital-alarm-2-151919-[AudioTrimmer.com].mp3')
             alarm.play()
         } else {
             const minutes = Math.floor(timeRemaining / 60000)
